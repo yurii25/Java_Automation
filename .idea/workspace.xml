@@ -1,35 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce7ef867-3c8e-45e8-b75a-670362f31f0d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Automation.iml" afterDir="false" />
+    <list default="true" id="ce7ef867-3c8e-45e8-b75a-670362f31f0d" name="Changes" comment="initial">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter6/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter6/Banana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter6/BirthdayCake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter6/Cake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter6/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter6/JuiceMarket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter6/Lemon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter6/Orange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter6/Task3/AndroidSmartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter6/Task3/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter6/Task3/SmartphoneTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter6/Task3/iOSSmartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter6/TasteTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/chapter6/WeddingCake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2Ip5AgWYSnU977ARjFd4fuFkYiM" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.chapter6.Task1">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="chapter6" />
+      <recent name="Task2" />
+      <recent name="Task1" />
+      <recent name="chapter6_1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.chapter6.SmartphoneTester">
+    <configuration name="JuiceMarket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter6.Task1.JuiceMarket" />
+      <module name="Java_Automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chapter6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmartphoneTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter6.SmartphoneTester" />
+      <module name="Java_Automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chapter6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="chapter1.Task1" />
       <module name="Java_Automation" />
@@ -43,8 +100,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="chapter6.Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter6.Task1" />
+    <configuration name="TasteTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter6.Task2.TasteTester" />
+      <module name="Java_Automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chapter6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="chapter6.JuiceMarket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter6.JuiceMarket" />
       <module name="Java_Automation" />
       <extension name="coverage">
         <pattern>
@@ -58,7 +128,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.chapter6.Task1" />
+        <item itemvalue="Application.chapter6.SmartphoneTester" />
+        <item itemvalue="Application.chapter6.JuiceMarket" />
+        <item itemvalue="Application.chapter6.Task2.TasteTester" />
+        <item itemvalue="Application.chapter6.Task1.JuiceMarket" />
         <item itemvalue="Application.Task1" />
       </list>
     </recent_temporary>
@@ -72,6 +145,28 @@
       <option name="presentableId" value="Default" />
       <updated>1670865542601</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial">
+      <created>1670865699604</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670865699604</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial">
+      <created>1670865836718</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670865836718</updated>
+    </task>
+    <task id="LOCAL-00003" summary="initial">
+      <created>1670865897700</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670865897701</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,5 +179,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial" />
   </component>
 </project>
