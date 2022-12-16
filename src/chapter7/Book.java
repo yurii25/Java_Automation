@@ -37,7 +37,7 @@ public class Book {
     public void setCoverType(String coverType) {
         if(coverType.equals("hard") || coverType.equals("soft")) {
             this.coverType = coverType;
-        } else System.out.println("The cover can be ether hard or soft! Please, enter the correct type.");
+        }else throw new IllegalArgumentException("The cover can be ether hard or soft! Please, enter the correct type.");
     }
 
     public int getQuantityOfPages() {
