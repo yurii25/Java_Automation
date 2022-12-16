@@ -31,11 +31,30 @@ public class BookTester {
         ArrayList<Book> booksWithSoftCover = new ArrayList<>();
         ArrayList<Book> booksWithHardCover  = new ArrayList<>();
 
+        System.out.println("There are next books with hard cover in the bookstore: ");
 
+        for(Book collection: bookCollection){
 
+            if (collection.getCoverType().equals("hard")) {
 
+                booksWithHardCover.add(collection);
+                System.out.println("*  " + collection.getTitle());
 
+            }
+        }
+        System.out.println("");
 
+        System.out.println("There are next books with soft cover in the bookstore: ");
+
+        for(Book collection: bookCollection){
+
+            if (collection.getCoverType().equals("soft")) {
+
+                booksWithSoftCover.add(collection);
+                System.out.println("*  " + collection.getTitle());
+
+            }
+        }
 
 
 
