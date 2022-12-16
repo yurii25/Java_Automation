@@ -3,8 +3,6 @@ package chapter8;
 import chapter7.Book;
 
 import java.util.ArrayList;
-import java.util.InputMismatchException;
-import java.util.Scanner;
 
 public class Task2 {
     public static void main(String[] args) {
