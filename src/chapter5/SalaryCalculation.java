@@ -44,27 +44,27 @@ public class SalaryCalculation {
         boolean probation = false;
 
         if (probation) {
-            SalesAgentSalary s1 = new SalesAgentSalary(160, 3000);
-            s1.setSalary(12000);
-            double totalSalaryOnProbation = salaryCalculation(180, s1.getSalary());
-            System.out.println("Your salary on probation: " + totalSalaryOnProbation);
+            SalesAgentSalary s1 = new SalesAgentSalary(160, 1000);
+
+            s1.setSalary(salaryCalculation(s1.getHours(), s1.getRate()));
+
+            System.out.println("Your salary on probation: " + s1.getSalary());
 
         }else {
             SalesAgentSalary s2 = new SalesAgentSalary(170, 4000, 4, 25, 10000);
-            s2.setSalary(16000);
-            double x = salaryCalculation(120, s2.getSalary());
-            System.out.println("Your salary depending on the ratio: " + x);
+            s2.setSalary(salaryCalculation(s2.getHours(), s2.getRate()));
 
-            double y = experienceRatioCalculation(5);
-            System.out.println("The ratio of salary is: " + y);
+            System.out.println("Your salary depending on the ratio: " + s2.getSalary());
 
-            double z = bonusOrFineCalculation(22);
-            System.out.println("Additional bonus/fine: " + z);
+            double x = experienceRatioCalculation(s2.getExperience());
+            System.out.println("The ratio of salary is: " + x);
 
-            double v = bonusCalculation(16000);
-            System.out.println("Bonus: " + v);
+            double y = bonusOrFineCalculation(s2.getSalesQuantity());
 
-            double salary = y * (x + z + v);
+            double z = bonusCalculation(s2.getSalesRevenue());
+            System.out.println("Bonus: " + z);
+
+            double salary = x * (s2.getSalary() + y + z);
             System.out.println("Your salary: " + salary);
 
         }
@@ -94,7 +94,7 @@ public class SalaryCalculation {
         return experienceRatio;
     }
     public static double bonusOrFineCalculation (int sales){
-        double bonus = 0;
+        double bonus;
         if (sales > 20){
             bonus = 250;
         }else if (sales < 10){

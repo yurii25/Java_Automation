@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce7ef867-3c8e-45e8-b75a-670362f31f0d" name="Changes" comment="initial">
-      <change beforePath="$PROJECT_DIR$/src/chapter8/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter8/Task2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chapter5/SalaryCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter5/SalaryCalculation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chapter5/SalesAgentSalary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chapter5/SalesAgentSalary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +47,7 @@
       <recent name="chapter6_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Task2">
+  <component name="RunManager" selected="Application.SalaryCalculation">
     <configuration name="BookTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="chapter7.BookTester" />
       <module name="Java_Automation" />
@@ -59,12 +61,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter1.Task1" />
+    <configuration name="SalaryCalculation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chapter5.SalaryCalculation" />
       <module name="Java_Automation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chapter1.*" />
+          <option name="PATTERN" value="chapter5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SalaryCalculation" />
         <item itemvalue="Application.Task2" />
         <item itemvalue="Application.chapter8.Task1" />
         <item itemvalue="Application.BookTester" />
         <item itemvalue="Application.chapter6.JuiceMarket" />
-        <item itemvalue="Application.Task1" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671229524441</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="initial">
+      <created>1671229580407</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1671229580407</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
