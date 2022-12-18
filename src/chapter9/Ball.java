@@ -1,7 +1,5 @@
 package chapter9;
 
-import java.util.Formatter;
-
 public enum Ball {
     BALL1(30, "Football", 50, "Leather"),
     BALL2(25, "Volleyball", 30, "Rubber"),
@@ -10,25 +8,32 @@ public enum Ball {
     BALL5(5, "Golf", 20, "Plastic");
 
 
+    private final double SIZE;
+    private final String SPORT;
+    private final double PRICE;
+    private final String MATERIAL;
 
-    private double size;
-    private String sport;
-    private double price;
-    private String material;
-
-
-
-    private Ball( double ballSize, String typeOfSport, double ballPrice, String ballMaterial){
-        size = ballSize;
-        sport = typeOfSport;
-        price = ballPrice;
-        material = ballMaterial;
+    Ball( double ballSize, String typeOfSport, double ballPrice, String ballMaterial){
+        SIZE = ballSize;
+        SPORT = typeOfSport;
+        PRICE = ballPrice;
+        MATERIAL = ballMaterial;
 
     }
+    public double getSIZE() {
+        return SIZE;
+    }
 
-    public String getProperties(Ball ball){
+    public String getSPORT() {
+        return SPORT;
+    }
 
-        return "\t" + ball.size + " \t" + ball.sport + "    \t" + ball.price + "\t" + ball.material;
-   }
+    public double getPRICE() {
+        return PRICE;
+    }
+
+    public String getMATERIAL() {
+        return MATERIAL;
+    }
 
 }
