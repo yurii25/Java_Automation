@@ -9,9 +9,6 @@ public class Computers {
         this.hardDrive = hardDrive;
     }
 
-
-
-
     int id;
     String brand;
     String os;
