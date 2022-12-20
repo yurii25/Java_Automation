@@ -5,7 +5,6 @@
 package chapter10;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Task2 {
     public static void main(String[] args) {
@@ -22,7 +21,7 @@ public class Task2 {
         computersList.stream().filter(c ->c.getHardDrive().equals("SSD")).forEach(x ->{
 
             if (windowsComputersList.size() <= 1){   // чи можна написати цю умову за допомогою limit?
-                                                      // я вже по-всякому пробував - не виходить)
+                                                      // я по-всякому пробував - не виходить)
             windowsComputersList.add(x);
             System.out.printf("%10s%10s%5s\n", x.getBrand(), x.getOs(), x.getHardDrive());
 

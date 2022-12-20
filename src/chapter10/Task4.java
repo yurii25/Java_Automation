@@ -19,14 +19,19 @@ public class Task4 {
 
         Collections.sort(computersList, Comparator.comparing(Computers::getPrice).reversed());
 
+        System.out.println("Sorted descending: ");
 
-        computersList.stream().skip(2).forEach(x -> {
-
-            computersList.stream().findFirst();
+        computersList.forEach(x -> {
             System.out.println(x.getPrice());
         });
 
+        System.out.println("");
 
+        System.out.println("Result: ");
+
+        Computers a = computersList.stream().skip(2).findFirst().get();
+
+        System.out.println(a.getPrice());
 
 
 

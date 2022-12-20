@@ -16,17 +16,18 @@ public class Task3 {
         computersList.add(new Computers(5, "MacBook", "macOS", 1000, "SSD"));
 
 
-        ArrayList<Double> pricesList3 = new ArrayList<>();
+        ArrayList<Double> pricesList = new ArrayList<>();
 
         computersList.forEach(x ->{
-            pricesList3.add(0, x.getPrice());
+            pricesList.add(0, x.getPrice());
 
         });
         System.out.println("Price: ");
 
-        pricesList3.forEach(y ->{
+        pricesList.forEach(y ->{
             System.out.println(y);
         });
         // чому ціни додаються в новий ArrayList і виводяться в зворотньому порядку?
+        // як зберегти оригінальний порядок?
     }
 }

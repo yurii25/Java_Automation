@@ -4,9 +4,6 @@
 package chapter10;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class Task1 {
     public static void main(String[] args) {
@@ -28,10 +25,7 @@ public class Task1 {
             }
 
         });
-
-
     }
-
 }
 
 
