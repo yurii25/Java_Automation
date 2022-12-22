@@ -41,74 +41,86 @@ package chapter5;
 
 public class SalaryCalculation {
     public static void main(String[] args) {
-        boolean probation = false;
 
-        if (probation) {
-            SalesAgentSalary s1 = new SalesAgentSalary(160, 1000);
+        SalesAgentSalary AgentOnProbation = new SalesAgentSalary(160, 1000);
 
-            s1.setSalary(salaryCalculation(s1.getHours(), s1.getRate()));
+        SalesAgentSalary AgentAfterProbation = new SalesAgentSalary(160,1200, 3,
+                                                                    25, 10000);
+        double x = SalesAgentSalary.experienceRatioCalculation(3) * (AgentAfterProbation.getSalary() +
+                AgentAfterProbation.getSalesQuantity() + AgentAfterProbation.getSalesRevenue());
 
-            System.out.println("Your salary on probation: " + s1.getSalary());
+        System.out.println("Your salary on probation: " + AgentOnProbation.getSalary());
+        System.out.println("Your salary after probation: " + x);
+//         1.2 * (1200 + 250 + )
 
-        }else {
-            SalesAgentSalary s2 = new SalesAgentSalary(170, 4000, 4, 25, 10000);
-            s2.setSalary(salaryCalculation(s2.getHours(), s2.getRate()));
-
-            System.out.println("Your salary depending on the ratio: " + s2.getSalary());
-
-            double x = experienceRatioCalculation(s2.getExperience());
-            System.out.println("The ratio of salary is: " + x);
-
-            double y = bonusOrFineCalculation(s2.getSalesQuantity());
-
-            double z = bonusCalculation(s2.getSalesRevenue());
-            System.out.println("Bonus: " + z);
-
-            double salary = x * (s2.getSalary() + y + z);
-            System.out.println("Your salary: " + salary);
-
-        }
+//        boolean probation = false;
+//
+//        if (probation) {
+//            SalesAgentSalary s1 = new SalesAgentSalary(160, 1000);
+//
+//            s1.setSalary(salaryCalculation(s1.getHours(), s1.getRate()));
+//
+//            System.out.println("Your salary on probation: " + s1.getSalary());
+//
+//        }else {
+//            SalesAgentSalary s2 = new SalesAgentSalary(170, 4000, 4, 25, 10000);
+//            s2.setSalary(salaryCalculation(s2.getHours(), s2.getRate()));
+//
+//            System.out.println("Your salary depending on the ratio: " + s2.getSalary());
+//
+//            double x = experienceRatioCalculation(s2.getExperience());
+//            System.out.println("The ratio of salary is: " + x);
+//
+//            double y = bonusOrFineCalculation(s2.getSalesQuantity());
+//
+//            double z = bonusCalculation(s2.getSalesRevenue());
+//            System.out.println("Bonus: " + z);
+//
+//            double salary = x * (s2.getSalary() + y + z);
+//            System.out.println("Your salary: " + salary);
+//
+//        }
 
     }
-    public static double salaryCalculation (int hours, double rate){
-        double ratio = 1.5;
-        double workShift = 160;
-
-        if (hours > workShift){
-            double salary = rate + (hours - workShift) * ratio;
-            return salary;
-        }else return rate;
-
-    }
-    public static double experienceRatioCalculation(int experience) {
-        double experienceRatio = 0;
-        if (experience <= 2) {
-            return experienceRatio = 1;
-        } else if (2 < experience && experience <= 4) {
-            return experienceRatio = 1.2;
-        } else if (4 < experience && experience <= 6) {
-            return experienceRatio = 1.3;
-        } else if (experience > 6) {
-            return experienceRatio = 1.4;
-        }
-        return experienceRatio;
-    }
-    public static double bonusOrFineCalculation (int sales){
-        double bonus;
-        if (sales > 20){
-            bonus = 250;
-        }else if (sales < 10){
-            bonus = -150;
-        }else bonus = 0;
-
-        return bonus;
-    }
-    public static double bonusCalculation (double salesValue){
-        double bonus = 0;
-        if(salesValue > 15000){
-            bonus = 250;
-        }
-        return bonus;
-    }
+//    public static double salaryCalculation (int hours, double rate){
+//        double ratio = 1.5;
+//        double workShift = 160;
+//
+//        if (hours > workShift){
+//            double salary = rate + (hours - workShift) * ratio;
+//            return salary;
+//        }else return rate;
+//
+//    }
+//    public static double experienceRatioCalculation(int experience) {
+//        double experienceRatio = 0;
+//        if (experience <= 2) {
+//            return 1;
+//        } else if (2 < experience && experience <= 4) {
+//            return 1.2;
+//        } else if (4 < experience && experience <= 6) {
+//            return 1.3;
+//        } else if (experience > 6) {
+//            return 1.4;
+//        }
+//        return experienceRatio;
+//    }
+//    public static double bonusOrFineCalculation (int sales){
+//        double bonus;
+//        if (sales > 20){
+//            bonus = 250;
+//        }else if (sales < 10){
+//            bonus = -150;
+//        }else bonus = 0;
+//
+//        return bonus;
+//    }
+//    public static double bonusCalculation (double salesValue){
+//        double bonus = 0;
+//        if(salesValue > 15000){
+//            bonus = 250;
+//        }
+//        return bonus;
+//    }
 
 }
