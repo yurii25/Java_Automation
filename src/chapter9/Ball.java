@@ -8,6 +8,16 @@ public enum Ball {
     BALL5(5, "Golf", 20, "Plastic");
 
 
+    @Override
+    public String toString() {
+        return "Ball{" +
+                "SIZE=" + SIZE +
+                ", SPORT='" + SPORT + '\'' +
+                ", PRICE=" + PRICE +
+                ", MATERIAL='" + MATERIAL + '\'' +
+                '}';
+    }
+
     private final double SIZE;
     private final String SPORT;
     private final double PRICE;

@@ -22,6 +22,25 @@ public class SalesAgentSalary {
         this.salesRevenue = salesRevenue;
     }
 
+    /*
+    public SalesAgentSalary(int hours, int rateInHour, int experience, int salesAmount, double salesTotalSum) {
+    this.hours = hours;
+    this.rateInHour = rateInHour;
+    this.experience = experience;
+    this.salesAmount = salesAmount;
+    this.salesTotalSum = salesTotalSum;
+    setSalary(salaryCalculation(....));
+}
+
+public SalesAgentSalary(int hours, int rateInHour) {
+    this.hours = hours;
+    this.rateInHour = rateInHour;
+    setSalary(salaryCalculation(....));
+}
+     */
+
+
+
     public double getSalary() {
         return salary;
     }
