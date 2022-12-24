@@ -9,28 +9,14 @@ public class SalesAgentSalary {
     private double salesRevenue;
 
     public SalesAgentSalary(int hours, double rate) {
-//        setSalary(salaryCalculation(this.hours = hours, this.rate = rate));
-        this.hours = hours;
-        this.rate = rate;
+        setSalary(salaryCalculation(this.hours = hours, this.rate = rate));
     }
     public SalesAgentSalary(int hours, double rate, int experience, int salesQuantity, double salesRevenue) {
-        this.hours = hours;
-        this.rate = rate;
-        this.experience = experience;
-        this.salesQuantity = salesQuantity;
-        this.salesRevenue = salesRevenue;
-
-//        salarySum(experienceRatioCalculation(this.experience = experience),
-//                setSalary(salaryCalculation(this.hours = hours, this.rate = rate)),
-//                bonusOrFineCalculation(this.salesQuantity = salesQuantity),
-//                bonusCalculation(this.salesRevenue = salesRevenue));
-
+        setSalary(experienceRatioCalculation(this.experience = experience) *
+                ((salaryCalculation(this.hours = hours, this.rate = rate)) +
+                bonusOrFineCalculation(this.salesQuantity = salesQuantity) +
+                bonusCalculation(this.salesRevenue = salesRevenue)));
     }
-
-//    public static double salarySum(double x, double y, double z, double c){
-//        double sum = x * (y + z + c);
-//        return sum;
-//    }
 
     public static double salaryCalculation (int hours, double rate){
         double ratio = 1.5;
@@ -72,7 +58,6 @@ public class SalesAgentSalary {
         }
         return bonus;
     }
-
 
 
 
