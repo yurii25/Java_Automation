@@ -4,6 +4,8 @@
 package chapter10;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Task1 {
     public static void main(String[] args) {
@@ -16,15 +18,23 @@ public class Task1 {
         computersList.add(new Computers(5, "MacBook", "macOS", 1000, "SSD"));
 
 
-        ArrayList<Computers> windowsComputersList = new ArrayList<>();
+//        ArrayList<Computers> windowsComputersList = new ArrayList<>();
+//
+//        computersList.forEach(x -> {
+//            if (x.getOs().equals("Windows")) {
+//                windowsComputersList.add(x);
+//                System.out.printf("%10s%10s\n", x.getBrand(), x.getOs());
+//            }
+//
+//        });
 
-        computersList.forEach(x -> {
-            if (x.getOs().equals("Windows")) {
-                windowsComputersList.add(x);
-                System.out.printf("%10s%10s\n", x.getBrand(), x.getOs());
-            }
+        List<Computers> onlyWindowsComputers = computersList.stream()
+                .filter(s->s.getOs().equals("Windows"))
+                .collect(Collectors.toList());
 
-        });
+        for(Computers s : onlyWindowsComputers){
+            System.out.printf("%10s%10s\n", s.getBrand(), s.getOs());
+        }
     }
 }
 

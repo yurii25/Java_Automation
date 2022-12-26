@@ -7,6 +7,8 @@ package chapter10;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Task4 {
     public static void main(String[] args) {
@@ -17,24 +19,32 @@ public class Task4 {
         computersList.add(new Computers(4, "Acer", "Windows", 600, "HDD"));
         computersList.add(new Computers(5, "MacBook", "macOS", 1000, "SSD"));
 
-        Collections.sort(computersList, Comparator.comparing(Computers::getPrice).reversed());
+//        Collections.sort(computersList, Comparator.comparing(Computers::getPrice).reversed());
+//
+//        System.out.println("Sorted descending: ");
+//
+//        computersList.forEach(x -> {
+//            System.out.println(x.getPrice());
+//        });
+//
+//        System.out.println("");
+//
+//        System.out.println("Result: ");
+//
+//        Computers a = computersList.stream().skip(2).findFirst().get();
+//
+//        System.out.println(a.getPrice());
 
-        System.out.println("Sorted descending: ");
 
-        computersList.forEach(x -> {
-            System.out.println(x.getPrice());
-        });
+        List<Computers> thirdOne = computersList.stream()
+                .sorted(Comparator.comparingDouble(Computers::getPrice).reversed())
+                .skip(2).findFirst()
+                .stream()
+                .collect(Collectors.toList());
 
-        System.out.println("");
-
-        System.out.println("Result: ");
-
-        Computers a = computersList.stream().skip(2).findFirst().get();
-
-        System.out.println(a.getPrice());
-
-
-
+        for(Computers s : thirdOne){
+            System.out.println(s.getPrice());
+        }
 
 
 

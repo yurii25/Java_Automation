@@ -5,6 +5,8 @@
 package chapter10;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Task2 {
     public static void main(String[] args) {
@@ -16,17 +18,25 @@ public class Task2 {
         computersList.add(new Computers(4, "Acer", "Windows", 600, "HDD"));
         computersList.add(new Computers(5, "MacBook", "macOS", 1000, "SSD"));
 
-        ArrayList<Computers> windowsComputersList = new ArrayList<>();
+//        ArrayList<Computers> windowsComputersList = new ArrayList<>();
+//
+//        computersList.stream().filter(c ->c.getHardDrive().equals("SSD")).forEach(x ->{
+//
+//            if (windowsComputersList.size() <= 1){
+//            windowsComputersList.add(x);
+//            System.out.printf("%10s%10s%5s\n", x.getBrand(), x.getOs(), x.getHardDrive());
+//
+//            }
+//        });
 
-        computersList.stream().filter(c ->c.getHardDrive().equals("SSD")).forEach(x ->{
+        List<Computers> SSDComputers = computersList.stream()
+                .filter(s->s.getHardDrive().equals("SSD"))
+                .limit(2)
+                .collect(Collectors.toList());
 
-            if (windowsComputersList.size() <= 1){   // чи можна написати цю умову за допомогою limit?
-                                                      // я по-всякому пробував - не виходить)
-            windowsComputersList.add(x);
-            System.out.printf("%10s%10s%5s\n", x.getBrand(), x.getOs(), x.getHardDrive());
-
-            }
-        });
+        for(Computers s : SSDComputers){
+            System.out.printf("%10s%10s\n", s.getBrand(), s.getOs());
+        }
 
     }
 }

@@ -5,9 +5,8 @@
 
 package chapter10;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+
 
 public class Task5 {
     public static void main(String[] args) {
@@ -26,6 +25,7 @@ public class Task5 {
         });
 
         comp.forEach((z, y) -> System.out.println(z + "  " + y.getBrand()));
+
 
     }
 }

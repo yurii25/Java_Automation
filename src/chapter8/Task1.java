@@ -10,16 +10,21 @@ public class Task1 {
 
         double sum = 0;
 
-        try {
-            for (int i = 0; i < 5; i++) {
-                System.out.println("Please, enter the number: ");
-                double a = scanner.nextDouble();
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Please, enter the number: ");
+            double a = scanner.nextDouble();
                 sum = sum + a;
-            }
-        } catch (NumberFormatException e) {
-            System.out.println("Invalid input type");
-        }
+            System.out.println("The sum is: " + sum);
 
+            boolean InputMismatchException = false;
+
+            if(InputMismatchException){
+                throw new InputMismatchException();
+            }
+        }
         System.out.println("The sum is: " + sum);
     }
+
 }
+
+
