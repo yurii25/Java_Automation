@@ -32,7 +32,7 @@ public class Task7 {
         });
 
         System.out.println(macOS);
-        System.out.println(" workspace tes5 ");
+        System.out.println(" workspace tes0 ");
 
     }
 }
