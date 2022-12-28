@@ -27,7 +27,7 @@ public class Task1 {
 
     }
 
-    public static double xxx(){
+    public static double xxx() throws InputMismatchException{
         double sum = 0;
 
         try {

@@ -6,6 +6,7 @@
 package chapter10;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 
 public class Task5 {
@@ -17,15 +18,21 @@ public class Task5 {
         computersList1.add(new Computers(4, "Acer", "Windows", 600, "HDD"));
         computersList1.add(new Computers(5, "MacBook", "macOS", 1000, "SSD"));
 
-        Map<Integer, Computers> comp = new HashMap<>();
+//        Map<Integer, Computers> comp = new HashMap<>();
+//
+//        computersList1.forEach(x ->{
+//            comp.put(x.getId(), x);
+//
+//        });
+//
+//        comp.forEach((z, y) -> System.out.println(z + "  " + y.getBrand()));
 
-        computersList1.forEach(x ->{
-            comp.put(x.getId(), x);
+        Map<Integer, Computers> comp = computersList1.stream()
+                .collect(Collectors.toMap(p->p.getId(), t->t));
 
+        comp.forEach((x, y) -> {
+            System.out.println(x + " " + y.getBrand());
         });
-
-        comp.forEach((z, y) -> System.out.println(z + "  " + y.getBrand()));
-
 
     }
 }
