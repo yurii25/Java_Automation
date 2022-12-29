@@ -4,44 +4,31 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Task1 {
-    static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
-
-//        double sum = 0;
-//
-//        try {
-//            for (int i = 0; i < 5; i++) {
-//                System.out.println("Please, enter the number: ");
-//                double a = scanner.nextDouble();
-//                sum = sum + a;
-//            }
-//        }catch (InputMismatchException e){
-//            System.out.println("Invalid input type");
-//        }
-//
-//        System.out.println("The sum is: " + sum);
-
-            System.out.println("The sum is: " + xxx());
+        xxx();
 
     }
 
-    public static double xxx() throws InputMismatchException{
-        double sum = 0;
+    public static void xxx() {
 
-        try {
-            for (int i = 0; i < 5; i++) {
+        double sum = 0;
+        for (int i = 0; i < 5; i++) {
+            try {
                 System.out.println("Please, enter the number: ");
+                Scanner scanner = new Scanner(System.in);
                 double a = scanner.nextDouble();
                 sum = sum + a;
+
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid input type");
+                i = i -1;
+
             }
-        }catch (InputMismatchException e){
-            System.out.println("Invalid input type");
+
         }
-        return sum;
-
-
+        System.out.println("The sum is: " + sum);
     }
 }
 
