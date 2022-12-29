@@ -31,11 +31,11 @@ public class SalesAgentSalary {
     public static double experienceRatioCalculation(int experience) {
         double experienceRatio = 1;
         if (2 < experience && experience <= 4) {
-            return 1.2;
+            experienceRatio = 1.2;
         } else if (4 < experience && experience <= 6) {
-            return 1.3;
+            experienceRatio = 1.3;
         } else if (experience > 6) {
-            return 1.4;
+            experienceRatio = 1.4;
         }
         return experienceRatio;
     }
