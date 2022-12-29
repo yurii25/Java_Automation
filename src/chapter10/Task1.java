@@ -35,6 +35,10 @@ public class Task1 {
         for(Computers s : onlyWindowsComputers){
             System.out.printf("%10s%10s\n", s.getBrand(), s.getOs());
         }
+
+        System.out.println(" ");
+
+        onlyWindowsComputers.forEach(System.out::println);
     }
 }
 

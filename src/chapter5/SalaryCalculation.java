@@ -44,7 +44,7 @@ public class SalaryCalculation {
 
         SalesAgentSalary AgentOnProbation = new SalesAgentSalary(160, 1000);
 
-        SalesAgentSalary AgentAfterProbation = new SalesAgentSalary(160, 1200, 3,
+        SalesAgentSalary AgentAfterProbation = new SalesAgentSalary(160, 1200, 2,
                 25, 10000);
 
         System.out.println("Your salary on probation: " + AgentOnProbation.getSalary());

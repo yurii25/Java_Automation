@@ -37,6 +37,9 @@ public class Task2 {
         for(Computers s : SSDComputers){
             System.out.printf("%10s%10s\n", s.getBrand(), s.getOs());
         }
+        System.out.println(" ");
+
+        SSDComputers.forEach(System.out::println);
 
     }
 }

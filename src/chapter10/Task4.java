@@ -45,6 +45,9 @@ public class Task4 {
         for(Computers s : thirdOne){
             System.out.println(s.getPrice());
         }
+        System.out.println(" ");
+
+        thirdOne.forEach(System.out::println);
 
 
 

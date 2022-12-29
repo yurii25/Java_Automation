@@ -8,7 +8,7 @@ package chapter10;
 import java.util.ArrayList;
 
 public class Task7 {
-    private static boolean macOS = false;
+//    private static boolean macOS = false;
 
     public static void main(String[] args) {
 
@@ -23,16 +23,19 @@ public class Task7 {
 
 
 
-        computersList3.forEach(x -> {
+//        computersList3.forEach(x -> {
+//
+//            if(x.getOs().equals("MacOS")){
+//                macOS = true;
+//            }
+//
+//        });
+//
+//        System.out.println(macOS);
+//        System.out.println(" workspace tes1 ");
 
-            if(x.getOs().equals("MacOS")){
-                macOS = true;
-            }
-
-        });
-
-        System.out.println(macOS);
-        System.out.println(" workspace tes1 ");
+        boolean b = computersList3.stream().anyMatch(x -> x.getOs().equals("MacOS"));
+        System.out.println(b);
 
     }
 }

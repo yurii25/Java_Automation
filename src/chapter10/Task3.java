@@ -39,5 +39,8 @@ public class Task3 {
         for(Double s : onlyPricesComputersList){
             System.out.println(s);
         }
+        System.out.println(" ");
+
+        onlyPricesComputersList.forEach(System.out::println);
     }
 }

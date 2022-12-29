@@ -8,7 +8,7 @@ package chapter10;
 import java.util.ArrayList;
 
 public class Task6 {
-    private static boolean DOS = false;
+//    private static boolean DOS = false;
 
     public static void main(String[] args) {
         ArrayList<Computers> computersList2 = new ArrayList<>();
@@ -18,15 +18,20 @@ public class Task6 {
         computersList2.add(new Computers(4, "Acer", "Windows", 600, "HDD"));
         computersList2.add(new Computers(5, "MacBook", "macOS", 1000, "SSD"));
 
-        computersList2.forEach(x -> {
+//        computersList2.forEach(x -> {
+//
+//            if(x.getOs().equals("DOS")){
+//                 DOS = true;
+//            }
+//
+//        });
 
-            if(x.getOs().equals("DOS")){
-                 DOS = true;
-            }
+//        System.out.println(DOS);
 
-        });
+        boolean a = computersList2.stream().noneMatch(x -> x.getOs().equals("DOS"));
+        System.out.println(a);
 
-        System.out.println(DOS);
+
 
 
 
